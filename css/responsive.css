@@ -1,0 +1,43 @@
+@media (max-width:1030px)
+{
+
+}
+@media (max-width:991px)
+{
+    #home .home-banner
+    {
+        background-position:40% center;
+    }
+    #home .home-text
+    {
+        transform: translate(-100%,-70%);
+    }
+}
+@media (max-width:767px)
+{
+    #home .home-banner
+    {
+        background-position:40% center;
+    }
+    #home .home-text
+    {
+        transform: translate(-80%,-50%);
+    }
+    
+}
+@media (max-width:330px)
+{
+    #home .home-banner
+    {
+        background-position:30% center;
+    }
+    #home .home-text
+    {
+        transform: translate(-80%,-50%);
+    }
+    .about-profile-pic .about-pic
+    {
+        height: 280px;
+        width: 280px;
+    }
+}

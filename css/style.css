@@ -1,0 +1,278 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+/* 
+    Light green : 40,40,40
+    Mid green : 46,46,46
+    Dark green : 35,35,35
+    Light Grey : 117,117,117
+    Change Light yellow : 244,182,78
+    Change Green : 156,199,71
+    Change blue : 71,159,235
+    Change Dark yellow : 234,155,75
+*/
+:root
+{
+
+    --bg-mid-green : rgb(46,46,46);
+    --bg-dark-green:#232323;
+    --bg-dark-gray:rgb(117,117,117);
+    --bg-light-white:rgb(225,225,225);
+    --theme-bg : rgb(234,155,75);
+    --bg-light-white:#f5f5f5;
+
+    
+    --primary-font : "Poppins",sans-serif;
+    --text-white : #fff;
+    --text-black : #000;
+    --text-light-white : rgb(225,225,225);
+    --theme-text-common : rgb(234,155,75); 
+    --text-dark-gray : #777;
+}
+body
+{
+    font-family:var(--primary-font);
+    font-size: 1rem; 
+    font-weight: 400;
+    line-height: 1.75rem;
+    background: var(--bg-mid-green);
+    color: var(--text-light-white);
+    overflow-x: hidden;
+}
+a,
+a:hover
+{
+    text-decoration: none;
+}
+p
+{
+    margin:0;
+}
+/* ------------------------ Navbar Section ------------------------  */
+#header .nav-head
+{
+    background: var(--bg-dark-green);
+    color: var(--text-light-white);
+    /* border-bottom: var(--bg-light-white); */
+    box-shadow:1px 1px 8px 0px var(--bg-light-white);
+}
+#header .nav-head .nav-item .nav-link
+{
+    color: var(--text-light-white);
+    text-transform: uppercase;
+    letter-spacing: 3px;   
+    font-size: 0.85rem;
+    font-weight: 100;
+    padding: 0.5rem 1rem;
+    line-height:2rem;
+    text-align: center;
+}
+
+#header .nav-head .nav-item .nav-link.active,
+#header .nav-head .nav-item .nav-link:hover
+{
+    color: var(--theme-text-common);
+    font-weight: 500;
+}
+#header .nav-head .navbar-brand
+{
+    color: var(--text-light-white);
+}
+#header .nav-head .navbar-toggler
+{
+    color: var(--text-light-white);   
+}
+#header .navbar-toggler-icon
+{
+    width: unset;
+    height: unset;
+}
+#header .nav-head .navbar-toggler:focus
+{
+    box-shadow: none;
+}
+#header .navbar-toggler:focus
+{
+    box-shadow: none;
+}
+
+/* ------------------------ Home Section ------------------------  */
+
+#home .home-banner
+{
+    height: 100vh;
+    background-image: url(../images/home.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+#home .home-text
+{
+    color: var(--text-light-white);
+    transform: translate(-140%,-70%);
+}
+#home .home-text-name
+{
+    font-weight: 300;
+}
+#home .home-text-work
+{
+    font-weight: 700;
+}
+#home .home-text-work .work
+{
+    color: var(--theme-text-common);
+}
+
+
+/* ------------------------ About Section ------------------------  */
+.about-myself
+{
+    background-color: var(--bg-mid-green);
+}
+.about-myself .about-para
+{
+    line-height: 1.8rem;
+    letter-spacing: 1.5px;
+}
+.about-myself .about-table
+{
+    color: var(--text-light-white);
+}
+.about-myself .about-table-head
+{
+    color: var(--bg-dark-gray);
+}
+.about-profile-pic
+{
+    height: 100%;
+}
+.about-profile-pic .about-pic
+{
+    height: 325px;
+    width: 325px;
+}
+/* ------------------------ Skill Section ------------------------  */
+
+.skill
+{
+    background-color: var(--bg-dark-green);
+}
+.progress-color
+{
+    background: var(--theme-bg);
+}
+.progress-bg
+{
+    background-color: var(--bg-dark-gray);
+}
+
+/*--------------------Experience Section-----------------------*/
+#experience
+{
+    height: 275px;
+    background-image: url("../images/count-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#experience .exp-value
+{
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: var(--theme-text-common);
+}
+#experience .exp-heading
+{
+    font-weight: 700;
+    color: var(--text-light-white);
+    font-family: var(--primary-font);
+}
+/*  */
+#portfolio
+{
+    background-color: var(--bg-dark-green) ;
+}
+#portfolio .filter-button
+{
+    color:var(--text-light-white);
+    font-size: 1.1rem;
+}
+#portfolio .filter-button:hover
+{
+    color:var(--theme-text-common)
+}
+#portfolio .filter-button:focus
+{
+    box-shadow: none;
+}
+#portfolio .filter-button.active
+{
+    color: var(--theme-text-common);
+    border-color:var(--theme-bg);
+    border: none;
+    border-bottom: 1px solid;
+    border-bottom-width:0.15rem ;
+}
+#portfolio .all-img img
+{
+    width:100%;
+    
+}
+/*--------------------Contact Info-----------------------*/
+.contact-info
+{
+    color: var(--text-dark-gray);
+}
+
+.link-icons
+{
+    color: var(--text-light-white);
+}
+#contact .contact-form input,
+#contact .contact-form textarea
+{
+    background-color: transparent;
+    color: var(--text-light-white);
+    resize: none;
+    border-bottom-color: var(--bg-light-white);
+}
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus
+{
+    box-shadow: none;
+    background-color: var(--bg-dark-green);
+    color: var(--text-light-white);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+#contact .contact-icon a
+{
+    color: var(--text-light-white);
+}
+#contact .contact-icon a:hover
+{
+    color: var(--theme-text-common);
+}
+.download-btn
+{   
+    font-size: 0.90rem;
+    background:var(--theme-bg);
+    color: var(--text-light-white);
+    font-weight: 700;
+}
+.download-btn:hover
+{
+    background:transparent;
+    border-color: var(--theme-bg);
+    color: var(--theme-text-common);
+}
+.download-btn:focus
+{
+    box-shadow: none;
+}
