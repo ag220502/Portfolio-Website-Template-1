@@ -33,6 +33,7 @@
 }
 body
 {
+    user-select: none;
     font-family:var(--primary-font);
     font-size: 1rem; 
     font-weight: 400;
@@ -56,7 +57,7 @@ p
     background: var(--bg-dark-green);
     color: var(--text-light-white);
     /* border-bottom: var(--bg-light-white); */
-    box-shadow:1px 1px 8px 0px var(--bg-light-white);
+    box-shadow:0px 0px 5px 0px var(--bg-light-white);
 }
 #header .nav-head .nav-item .nav-link
 {
@@ -219,7 +220,7 @@ p
 #portfolio .all-img img
 {
     width:100%;
-    
+    cursor: pointer;   
 }
 /*--------------------Contact Info-----------------------*/
 .contact-info
@@ -245,6 +246,7 @@ p
     box-shadow: none;
     background-color: var(--bg-dark-green);
     color: var(--text-light-white);
+    transition: 0.4s all linear;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -271,6 +273,7 @@ input::-webkit-inner-spin-button {
     background:transparent;
     border-color: var(--theme-bg);
     color: var(--theme-text-common);
+    transition: 0.4s all linear;
 }
 .download-btn:focus
 {
